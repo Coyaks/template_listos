@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+/* como usar?
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/* raiz del document
+invocamos a las variables con var(nombre)*/
+
+:root{
+    --celeste: #00ADF1;
+    --gris: #939499;
+    --negro: #1D1D1B;
+    --magenta: #EEF7FF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.btn-cotizar{
+    background: linear-gradient(45deg, #0034D1, #00ADF1);
+    color: #ffffff !important;
+    width: 200px;
+}
+p, h1, h2, h3, h4,h5, span, a{
+    font-family: 'Ubuntu', sans-serif;
+}
+.bg-celeste{
+    background-color:#00ADF1;
+}
+.bg-gris{
+    background-color:#939499;
+}
+.bg-negro{
+    background-color:#1D1D1B;
+}
+
+.bg-celeste-degradado{
+    background: linear-gradient(45deg, #0034D1, #00ADF1);
+}
+
+.text-celeste{
+    color:#00ADF1;
+}
+.text-azul{
+    color:#0034D1;
+}
+.text-gris{
+    color:#939499;
+}
+.text-negro{
+    color:#1D1D1B;
+}
+.lista_redes{
+    list-style: none;
+}
+.lista_redes li{
+    display: inline;
+    margin-right: 10px;
+}
+
+footer{
+    padding: 70px 0;
+}
+.activo{
+    border-bottom: 5px solid #00ADF1;
+    /* border-bottom: 1px solid red !important ; */
+    width: 80%;
+}
+
+.hr{
+    width:50%;
+    height:4px;
+    background-color: var(--celeste);
+    margin: auto;
+}
+
+.bg-navbar{
+    background-color: #fff;
+}
+.width-navbar{
+    width: 80%;
+}
+.navbar-nav li a{
+    color: var(--gris);
+    font-weight: bold;
+}
+
+.text-nosotros{
+    width: 50%;
+}
+.navbar-coy li{
+    margin: 0 15px;
+}
+.carousel-item img{
+    width: 100%;
+    /* height: calc(100vh - 8vh); */
+    height: 100vh;
+}
+.logo{
+    width: 180px;
+}
+/* .mt-derechos{
+    margin-top: 100px;
+} */
+.navbar{
+    min-height:90px;
+}
+.icon-menu{
+    font-size: 40px;
+}
+/* .bg-img1{
+    background-image: url("img/b1.png");
+} */
+
+/* .bg-img1{
+    background-image: url("../img/b1.png");
+} */
+
+.banner1-text{
+    position: absolute;
+    left:800px;
+    top: 200px;
+}
+
+.banner2-text{
+    position: absolute;
+    left:250px;
+    top: 20%;
+}
+
+.banner3-text{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+.container-item>div{
+    position: relative;
+}
+.btn_info_white{
+    box-shadow: 5px 5px 20px rgba(255,255,255, .4);
+}
+
+.imgNosotros{
+    width:100%;
+}
+/* h1 = 40px */
+.text-size-titulo{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.carousel-mision .carousel-item {
+    height: 300px;
+}
+
+.carousel-testimonio .carousel-item {
+    height: 400px;
+}
+.mision-caption{
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+
+.bg-img-mision{
+    background-image: url("../img/mision_150.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-img-vision{
+    background-image: url("../img/vision.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+}
+
+.beneficios{
+    background-image: url("../img/bg-beneficio.png");
+}
+
+.col-icon-beneficios .row{
+    margin-top: 30px;
+}
+
+.cotizacion{
+    background-image: url("../img/bg_cotizacion_1400.png");
+    background-size: cover;
+}
+.capa-negra-coti{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.mt-cotizacion{
+    margin-top: 200px;
+}
+.mb-cotizacion{
+    margin-bottom: 200px;
+}
+.testimonio{
+    padding: 50px 0;
+}
+
+/* ESTILOS TESTIMONIO */
+.bg-img-t1{
+    background-image: url(../img/t1.png);
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+.bg-img-t2{
+    background-image: url(../img/t2.png);
+    background-size: 85% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+}
+
+#listaEstrellas{
+    list-style: none;
+}
+#listaEstrellas li{
+    display: inline;
+}
+
+form select option{
+    color: var(--gris);
+    font-weight: bold;
+}
+.card-servicios>div{
+    border: 2px solid var(--gris);
+}
+
+.bg-mision{
+    background-image: url(../img/fondo_mision.png)
+}
+.btn-animated:hover{
+    transform: scale(1.1);
+}
+
+/* ////////////////////////RESPONSIVE DESIGN//////////////////////// */
+@media screen and (max-width: 576px){
+    .carousel-inner img{
+        background-size: cover;
+    }
+    
+    .banner1-text h5{
+        display: none;
+    }
+    .text-size-titulo{
+        font-size: 30px;
+    }
+    /* .btn1-banner{
+        display: none;
+    } */
+
+    .banner1-text{
+        width: 75% !important;
+        position: absolute;
+        left:20px;
+        top: 120px;
+    }
+    .btn1-banner{
+        position: absolute;
+        /* left:20px; */
+        
+        /* display: flex;
+        justify-content: center; */
+        left: 10%;
+        bottom: 20px;
+        width: 100%;
+        opacity: 0.6;
+    }
+    .banner1-text h1{
+        width: 50%;
+    }
+
+    .banner2-text{
+        position: absolute;
+        left:50px;
+        top: 150px;
+    }
+    .banner3-text{
+        position: absolute;
+        left: 255px;
+        top: 450px;
+    }
+    .carousel-mision .carousel-item {
+        height: 420px;
+    }
+    .carousel-testimonio .carousel-item {
+        height: 800px;
+    }
+    .carousel-caption-test{
+        /* margin-top: 500px; */
+        padding: 100px 0px;
+    }
+    .capa-beneficios{
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .col-icon-beneficios>div{
+        border: 2px solid var(--gris);
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .quitar-margin-movil{
+        margin-top: 5px !important;
+    }
+    .fila-nosotros{
+        margin-top: 15px;
+    }
+    .btnCotizar-movil{
+        display: block;
+        text-align: center;
+    }
+    
+    
+}
+@media screen and (max-width: 768px){
+    .text-nosotros{
+        width: 100%;
+    }
+    .text-nosotros h1{
+        display: inline-block;
+    }
+    .container-logo-footer{
+        text-align: center;
+    }
+    .carousel-testimonio .carousel-item {
+        height: 800px;
+    }
+
+    .bg-img-t1{
+        background-image: url(../img/t1.png);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 200px;
+    }
+
+    .bg-img-t2{
+        background-image: url(../img/t2.png);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 200px;
+    }
+    .btnCotizar-movil{
+        display: none;
+    }
+}
+@media screen and (max-width: 992px){
+   
+}
+@media screen and (min-width: 1200px){
+
+}
